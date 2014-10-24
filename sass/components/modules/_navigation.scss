@@ -1,0 +1,56 @@
+// =========================================
+// Navigation
+// =========================================
+.menu {
+	height: 0;
+}
+
+.menu-button {
+	display: block;
+	cursor: pointer;
+	float: right;
+	text-decoration: none;
+	color: $grey-dark;
+	margin: 2em 1.5em;
+	transition: all .25s ease;
+	.fa {
+		color: $grey;
+		margin-left: 0.75em;
+		transition: all .25s ease;
+	}
+}
+
+.dropdown {
+	clear: both;
+	text-align: center;
+	padding: 0.5em 5em;
+	background-color: $grey-x-light;
+	border-top: 1px solid $grey-light;
+	border-bottom: 1px solid $grey-light;
+  li {
+    list-style: none;
+	padding: 0.5em 2em;
+	text-align: right;
+	display: inline-block;
+  }
+  a {
+  	text-decoration: none;
+  	color: $grey-dark;
+  }
+}
+
+// Fade in / out effect for dropdown menu
+.fadein, .fadeout {
+    opacity: 0;
+    visibility: hidden;
+    -moz-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+    -o-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+    -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+    transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+.fadein {
+	visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}

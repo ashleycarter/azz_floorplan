@@ -1,0 +1,34 @@
+// =========================================
+// Sensors
+// =========================================
+.sensor {
+	@include span(6);
+	text-align: center;
+	padding-left: 0;
+
+	.status-icon {
+		@include break;
+		margin-left: auto;
+		margin-right: auto;
+		height: 0;
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+
+	.replaced-svg {
+		@include break;
+		clear: both;
+		display: block;
+		width: 90%;
+		margin: 0em auto 1em;
+		border-radius: 50%;
+		background-color: $green;
+	}
+
+	@include breakpoint($medium) {
+		@include span(4);
+	}
+	@include breakpoint($large) {
+		@include span(4);
+	}
+}

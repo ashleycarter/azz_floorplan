@@ -1,0 +1,48 @@
+// =========================================
+// List View
+// =========================================
+
+.content {
+	@include span(6);
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.floorplan-list {
+	@include container($x-large);
+	h4 {
+		color: $blue-grey-dark;
+		margin-bottom: 1em;
+	}
+	.content--sensor-list {
+		clear: both;
+		list-style-type: none;
+	}
+}
+
+// Numbers
+.numbers {
+	@include span(12);
+	font-weight: $font-weight--bold;
+	color: $blue-grey;
+	margin: 1em 0 0.5em 0;
+	padding-bottom: 0.75em;
+	border-bottom: 1px solid $grey-light;
+}
+
+// Labels
+.labels, .status {
+	display: block;
+}
+
+.label {
+	text-transform: lowercase;
+	color: $grey-medium;
+	font-weight: $font-weight--regular;
+}
+
+.status {
+	text-transform: uppercase;
+	font-size: ms(-0.25);
+	margin-bottom: 2em;
+}

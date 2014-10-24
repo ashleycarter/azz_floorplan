@@ -1,0 +1,48 @@
+// =========================================
+// Header Styles
+// =========================================
+
+// Header
+header {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	position: fixed;
+	height: 90px;
+	background-color: $grey-xx-light;
+	color: $white;
+	border-bottom: 1px solid $grey-light;
+	z-index: 1;
+}
+
+.site-header {
+	height: 0;
+	@include container($large);
+	@include breakpoint($x-large) {
+		@include container($x-large);
+	}
+}
+
+.logo {
+	@include span(3);
+	display: block;
+	margin: 1em auto;
+	margin-top: 1.75em;
+	a {
+		font-weight: $font-weight--bold;
+		text-decoration: none;
+		color: $blue-x-dark;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link href="js/vendor/jquery.qtip.custom/jquery.qtip.min.css" rel="stylesheet">
+        <link href="css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Begin main site content -->
+        <header>
+            <div class="site-header">
+               <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
+            </div>
+            <nav>
+              <ul>
+                <li class="menu"><a class="menu-button">Menu <i class="fa fa-bars"></i></a>
+                  <ul class="dropdown fadeout">
+                    <li><a labtarget="beta-content" href="#">Beta</a></li>
+                    <li><a labtarget="boiler-content" href="#">Boiler</a></li>
+                    <li><a labtarget="fire-lane-content" href="#">Fire Lane</a></li>
+                    <li><a labtarget="kettle-content" href="#">Kettle</a></li>
+                    <li><a labtarget="maintenance-content" href="#">Maintenance</a></li>
+                    <li><a labtarget="material-staging-content" href="#">Material Staging</a></li>
+                    <li><a labtarget="material-storage-content" href="#">Material Storage</a></li>
+                    <li><a labtarget="production-area-content" href="#">Production Area</a></li>
+                    <li><a labtarget="scale-content" href="#">Scale</a></li>
+                    <li><a labtarget="tanks-content" href="#">Tanks</a></li>
+                    <li><a labtarget="utility-trench-content" href="#">Utility Trench</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+         </header>
+
+        <section id="floorplan">
+            <!-- <span class="small"><img class="svg" src="img/-small.svg"/></span> -->
+            <span class="large"><img class="svg" src="img/azz_floorplan_large.svg"/></span>
+        </section>
+
+        <section class="floorplan-list">
+            <div>
+                <ul class="content">
+                    <li><span id="beta-content" class="h2 numbers">01</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Beta<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/camera-on.svg"/></span>
+                                <span class="label">Cameras</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Pressure</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="boiler-content" class="h2 numbers">02</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Boiler<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Amp</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Pressure</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="fire-lane-content" class="h2 numbers">03</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Fire Lane<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Motion</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Wind</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="kettle-content" class="h2 numbers">04</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Kettle<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Level</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Product Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="maintenance-content" class="h2 numbers">05</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Maintenance<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Inventory</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="material-staging-content" class="h2 numbers">06</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Material Staging<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Amp</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Level</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Product Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="material-storage-content" class="h2 numbers">07</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Material Storage<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">pH Levels</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Wind</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Cameras</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Inventory</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                 <ul class="content">
+                    <li><span id="production-area-content" class="h2 numbers">08</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Production Area<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Fire</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Wind</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Cameras</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">pH Levels</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Product Movement</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="scale-content" class="h2 numbers">09</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Scale<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Wind</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Cameras</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="tanks-content" class="h2 numbers">10</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Tanks<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Amp</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Levels</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Pressure</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Temperature</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="content">
+                    <li><span id="utility-trench-content" class="h2 numbers">11</span></li>
+                        <ul class="content--sensor-list">
+                            <li><h4>Utility Trench<span></span></h4></li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Fire</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Cameras</span>
+                                <span class="status">On</span>
+                            </li>
+                            <li class="sensor">
+                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="label">Moisture</span>
+                                <span class="status">On</span>
+                            </li>
+                        </ul>
+                </ul>
+            </div>
+        </section> <!-- end floorplan list -->
+
+        <div id="tooltip-html" style="display:none">
+            <div id="beta-tt">
+                <ul class="tt-sensors">
+                    <li><span>Cameras</span></li>
+                    <li><span>Pressure</span></li>
+                    <li><span>Temperature</span></li>
+                </ul>
+            </div>
+            <div id="boiler-tt">
+                <ul class="tt-sensors">
+                    <li><span>Amp</span></li>
+                    <li><span>Pressure</span></li>
+                    <li><span>Temperature</span></li>
+                </ul>
+            </div>
+            <div id="fire-lane-tt">
+                <ul class="tt-sensors">
+                    <li><span>Wind</span></li>
+                    <li><span>Motion</span></li>
+                </ul>
+            </div>
+            <div id="kettle-tt">
+                <ul class="tt-sensors">
+                    <li><span>Level</span></li>
+                    <li><span>Temperature</span></li>
+                    <li><span>Product Temperature</span></li>
+                </ul>
+            </div>
+            <div id="maintenance-tt">
+                <ul class="tt-sensors">
+                    <li><span>Inventory</span></li>
+                </ul>
+            </div>
+            <div id="material-staging-tt">
+                <ul class="tt-sensors">
+                    <li><span>Amp</span></li>
+                    <li><span>Level</span></li>
+                    <li><span>Temperature</span></li>
+                    <li><span>Product Temperature</span></li>
+                </ul>
+            </div>
+            <div id="material-storage-tt">
+                <ul class="tt-sensors">
+                    <li><span>pH</span></li>
+                    <li><span>Wind</span></li>
+                    <li><span>Cameras</span></li>
+                    <li><span>Inventory</span></li>
+                </ul>
+            </div>
+            <div id="production-area-tt">
+                <ul class="tt-sensors">
+                    <li><span>Fire</span></li>
+                    <li><span>Wind</span></li>
+                    <li><span>Cameras</span></li>
+                    <li><span>pH Levels</span></li>
+                    <li><span>Product Movement</span></li>
+                </ul>
+            </div>
+            <div id="scale-tt">
+                <ul class="tt-sensors">
+                    <li><span>Wind</span></li>
+                    <li><span>Cameras</span></li>
+                </ul>
+            </div>
+            <div id="tanks-tt">
+                <ul class="tt-sensors">
+                    <li><span>Amp</span></li>
+                    <li><span>Levels</span></li>
+                    <li><span>Pressure</span></li>
+                    <li><span>Temperature</span></li>
+                </ul>
+            </div>
+            <div id="utility-trench-tt">
+                <ul class="tt-sensors">
+                    <li><span>Fire</span></li>
+                    <li><span>Cameras</span></li>
+                    <li><span>Moisture</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/min/plugins-min.js"></script>
+        <script src="js/min/main-min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

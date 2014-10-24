@@ -1,0 +1,20 @@
+// =========================================
+// Floorplan View
+// =========================================
+
+// Floorplan images
+.large {
+	display: none;
+	@include breakpoint($large) {
+		display: block;
+		position: relative;
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+		top: 120px;
+		margin-bottom: 2em;
+	}
+	@include breakpoint($x-large) {
+		padding-left: 6em;
+		padding-right: 6em;
+	}
+}
