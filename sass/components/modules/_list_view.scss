@@ -3,9 +3,17 @@
 // =========================================
 
 .content {
-	@include span(6);
+	@include span(12);
 	padding-left: 2em;
 	padding-right: 2em;
+	@include breakpoint($large) {
+		@include span(6);
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	&:last-child {
+		margin-bottom: 3em;
+	}
 }
 
 .floorplan-list {

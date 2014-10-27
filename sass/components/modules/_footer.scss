@@ -1,0 +1,27 @@
+// =========================================
+// Footer Styles
+// =========================================
+.signals {
+	@include span(12);
+	display: block;
+	position: fixed;
+	clear: both;
+	z-index: 1;
+	color: $grey;
+	bottom: 0;
+	text-align: center;
+	padding: 1em;
+	background-color: $grey-xx-light;
+	border-top: 1px solid $grey-light;
+	li {
+		padding: 0 1em 0.5em;
+		span {
+			font-weight: $font-weight--bold;;
+			padding: 0 10px;
+		}
+		@include breakpoint($medium) {
+			display: inline-block;
+		}
+
+	}
+}

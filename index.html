@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link href="js/vendor/jquery.qtip.custom/jquery.qtip.min.css" rel="stylesheet">
+        
         <link href="css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,6 +26,7 @@
         <![endif]-->
 
         <!-- Begin main site content -->
+    <section id="top">
         <header>
             <div class="site-header">
                <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
@@ -33,6 +35,7 @@
               <ul>
                 <li class="menu"><a class="menu-button">Menu <i class="fa fa-bars"></i></a>
                   <ul class="dropdown fadeout">
+                    <li class="back-to-top"><a labtarget="top" href="#">Back to Top</a></li>
                     <li><a labtarget="beta-content" href="#">Beta</a></li>
                     <li><a labtarget="boiler-content" href="#">Boiler</a></li>
                     <li><a labtarget="fire-lane-content" href="#">Fire Lane</a></li>
@@ -51,7 +54,8 @@
          </header>
 
         <section id="floorplan">
-            <!-- <span class="small"><img class="svg" src="img/-small.svg"/></span> -->
+            <span class="x-small"><img class="svg" src="img/azz_floorplan_x_small.svg"/></span>
+            <span class="small"><img class="svg" src="img/azz_floorplan_small.svg"/></span>
             <span class="large"><img class="svg" src="img/azz_floorplan_large.svg"/></span>
         </section>
 
@@ -62,20 +66,21 @@
                         <ul class="content--sensor-list">
                             <li><h4>Beta<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/camera-on.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">On</span>
+                                <span class="status">Off</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
                                 <span class="label">Pressure</span>
                                 <span class="status">On</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">68°</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -83,20 +88,21 @@
                         <ul class="content--sensor-list">
                             <li><h4>Boiler<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
-                                <span class="status">On</span>
+                                <span class="status">50 amps</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
                                 <span class="label">Pressure</span>
                                 <span class="status">On</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">71°</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -104,15 +110,16 @@
                         <ul class="content--sensor-list">
                             <li><h4>Fire Lane<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg disconnected" src="img/svg/motion.svg"/></span>
                                 <span class="label">Motion</span>
-                                <span class="status">On</span>
+                                <span class="status">Not Detected</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
                                 <span class="label">Wind</span>
-                                <span class="status">On</span>
+                                <span class="status">3 MPH</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -121,19 +128,20 @@
                             <li><h4>Kettle<span></span></h4></li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
-                                <span class="label">Level</span>
-                                <span class="status">On</span>
+                                <span class="label">Levels</span>
+                                <span class="status">57%</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">52°</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/product-temp.svg"/></span>
                                 <span class="label">Product Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">43°</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -141,10 +149,11 @@
                         <ul class="content--sensor-list">
                             <li><h4>Maintenance<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/inventory.svg"/></span>
                                 <span class="label">Inventory</span>
                                 <span class="status">On</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -152,25 +161,26 @@
                         <ul class="content--sensor-list">
                             <li><h4>Material Staging<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
-                                <span class="status">On</span>
+                                <span class="status">50 amps</span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
-                                <span class="label">Level</span>
-                                <span class="status">On</span>
+                                <span class="label">Levels</span>
+                                <span class="status">62%</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">70°</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/product-temp.svg"/></span>
                                 <span class="label">Product Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">43°</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -178,25 +188,26 @@
                         <ul class="content--sensor-list">
                             <li><h4>Material Storage<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/pH.svg"/></span>
                                 <span class="label">pH Levels</span>
-                                <span class="status">On</span>
+                                <span class="status">7.4</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
                                 <span class="label">Wind</span>
-                                <span class="status">On</span>
+                                <span class="status">3 MPH</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">On</span>
+                                <span class="status">Off</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/inventory.svg"/></span>
                                 <span class="label">Inventory</span>
                                 <span class="status">On</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                  <ul class="content">
@@ -204,30 +215,31 @@
                         <ul class="content--sensor-list">
                             <li><h4>Production Area<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg disconnected" src="img/svg/fire-normal.svg"/></span>
                                 <span class="label">Fire</span>
-                                <span class="status">On</span>
+                                <span class="status">None Detected</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
                                 <span class="label">Wind</span>
-                                <span class="status">On</span>
+                                <span class="status">2 MPH</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">On</span>
+                                <span class="status">Off</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/pH.svg"/></span>
                                 <span class="label">pH Levels</span>
-                                <span class="status">On</span>
+                                <span class="status">7.6</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/product-movement.svg"/></span>
                                 <span class="label">Product Movement</span>
-                                <span class="status">On</span>
+                                <span class="status">83% complete</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -235,15 +247,16 @@
                         <ul class="content--sensor-list">
                             <li><h4>Scale<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
                                 <span class="label">Wind</span>
-                                <span class="status">On</span>
+                                <span class="status">2 MPH</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">On</span>
+                                <span class="status">Off</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -251,25 +264,26 @@
                         <ul class="content--sensor-list">
                             <li><h4>Tanks<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
-                                <span class="status">On</span>
+                                <span class="status">50 amps</span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
                                 <span class="label">Levels</span>
-                                <span class="status">On</span>
+                                <span class="status">42%</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
                                 <span class="label">Pressure</span>
                                 <span class="status">On</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">On</span>
+                                <span class="status">42°</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
                 <ul class="content">
@@ -277,31 +291,113 @@
                         <ul class="content--sensor-list">
                             <li><h4>Utility Trench<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg disconnected" src="img/svg/fire-normal.svg"/></span>
                                 <span class="label">Fire</span>
-                                <span class="status">On</span>
+                                <span class="status">None Detected</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">On</span>
+                                <span class="status">Off</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg" src="img/svg/moisture.svg"/></span>
                                 <span class="label">Moisture</span>
                                 <span class="status">On</span>
                             </li>
+                            <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
             </div>
         </section> <!-- end floorplan list -->
 
+        <footer>
+          <ul class="signals">
+            <li>Signals Per Second:<span class="signals-per-second">2,175</span></li>
+            <li>Total Signals Today:<span class="total-signals">50,195,654</span></li>
+            <li>CPU Percent:<span class="total-cpu">17.3%</span></li>
+           </ul>
+        </footer>
+
+        <!-- small tooltip section -->
+        <div id="tooltip-html" style="display:none">
+            <div id="beta-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Beta</span></li>
+                    <li class="view-link"><a labtarget="beta-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="boiler-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Boiler Room</span></li>
+                    <li class="view-link"><a labtarget="boiler-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="fire-lane-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Fire Lane</span></li>
+                    <li class="view-link"><a labtarget="fire-lane-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="kettle-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Kettle</span></li>
+                    <li class="view-link"><a labtarget="kettle-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="maintenance-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Maintenance</span></li>
+                    <li class="view-link"><a labtarget="maintenance-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="material-staging-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Material Staging</span></li>
+                    <li class="view-link"><a labtarget="material-staging-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="material-storage-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Material Storage</span></li>
+                    <li class="view-link"><a labtarget="material-storage-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="production-area-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Production Area</span></li>
+                    <li class="view-link"><a labtarget="production-area-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="scale-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Scale</span></li>
+                    <li class="view-link"><a labtarget="scale-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="tanks-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Tanks</span></li>
+                    <li class="view-link"><a labtarget="tanks-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+            <div id="utility-trench-tt-small">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Utility Trench</span></li>
+                    <li class="view-link"><a labtarget="utility-trench-content" href="#">View Sensors</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end small tooltip section -->
+
+        <!-- large tooltip section -->
         <div id="tooltip-html" style="display:none">
             <div id="beta-tt">
                 <ul class="tt-sensors">
                     <li><span>Cameras</span></li>
                     <li><span>Pressure</span></li>
                     <li><span>Temperature</span></li>
+                    <li class="view-link"><a labtarget="beta-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="boiler-tt">
@@ -309,12 +405,14 @@
                     <li><span>Amp</span></li>
                     <li><span>Pressure</span></li>
                     <li><span>Temperature</span></li>
+                    <li class="view-link"><a labtarget="boiler-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="fire-lane-tt">
                 <ul class="tt-sensors">
-                    <li><span>Wind</span></li>
                     <li><span>Motion</span></li>
+                    <li><span>Wind</span></li>
+                    <li class="view-link"><a labtarget="fire-lane-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="kettle-tt">
@@ -322,11 +420,13 @@
                     <li><span>Level</span></li>
                     <li><span>Temperature</span></li>
                     <li><span>Product Temperature</span></li>
+                    <li class="view-link"><a labtarget="kettle-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="maintenance-tt">
                 <ul class="tt-sensors">
                     <li><span>Inventory</span></li>
+                    <li class="view-link"><a labtarget="maintenance-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="material-staging-tt">
@@ -335,6 +435,7 @@
                     <li><span>Level</span></li>
                     <li><span>Temperature</span></li>
                     <li><span>Product Temperature</span></li>
+                    <li class="view-link"><a labtarget="material-staging-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="material-storage-tt">
@@ -343,6 +444,7 @@
                     <li><span>Wind</span></li>
                     <li><span>Cameras</span></li>
                     <li><span>Inventory</span></li>
+                    <li class="view-link"><a labtarget="material-storage-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="production-area-tt">
@@ -352,12 +454,14 @@
                     <li><span>Cameras</span></li>
                     <li><span>pH Levels</span></li>
                     <li><span>Product Movement</span></li>
+                    <li class="view-link"><a labtarget="production-area-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="scale-tt">
                 <ul class="tt-sensors">
                     <li><span>Wind</span></li>
                     <li><span>Cameras</span></li>
+                    <li class="view-link"><a labtarget="scale-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="tanks-tt">
@@ -366,6 +470,7 @@
                     <li><span>Levels</span></li>
                     <li><span>Pressure</span></li>
                     <li><span>Temperature</span></li>
+                    <li class="view-link"><a labtarget="tanks-content" href="#">View All</a></li>
                 </ul>
             </div>
             <div id="utility-trench-tt">
@@ -373,12 +478,18 @@
                     <li><span>Fire</span></li>
                     <li><span>Cameras</span></li>
                     <li><span>Moisture</span></li>
+                    <li class="view-link"><a labtarget="utility-trench-content" href="#">View All</a></li>
                 </ul>
             </div>
         </div>
+        <!-- end large tooltip section -->
+    </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.qtip.custom/jquery.qtip.js"></script>
+        <script src="js/vendor/scotchPanels.min.js"></script>
+    
         <script src="js/min/plugins-min.js"></script>
         <script src="js/min/main-min.js"></script>
 

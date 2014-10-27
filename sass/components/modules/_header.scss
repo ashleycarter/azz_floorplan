@@ -13,6 +13,9 @@ header {
 	color: $white;
 	border-bottom: 1px solid $grey-light;
 	z-index: 1;
+	@include breakpoint($x-large) {
+		padding-left: 0;
+	}
 }
 
 .site-header {
@@ -28,6 +31,7 @@ header {
 	display: block;
 	margin: 1em auto;
 	margin-top: 1.75em;
+	padding-left: 1em;
 	a {
 		font-weight: $font-weight--bold;
 		text-decoration: none;

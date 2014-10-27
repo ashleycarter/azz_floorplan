@@ -3,6 +3,32 @@
 // =========================================
 
 // Floorplan images
+.x-small {
+	display: block;
+	position: relative;
+	top: 120px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 3em;
+	@include breakpoint($medium) {
+		display: none;
+	}
+}
+.small {
+	display: none;
+		@include breakpoint($medium) {
+		display: block;
+		position: relative;
+		top: 120px;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-bottom: 3em;
+	}
+	@include breakpoint($large) {
+		display: none;
+	}
+}
+
 .large {
 	display: none;
 	@include breakpoint($large) {

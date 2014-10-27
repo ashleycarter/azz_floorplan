@@ -2,7 +2,7 @@
 // Sensors
 // =========================================
 .sensor {
-	@include span(6);
+	@include span(4);
 	text-align: center;
 	padding-left: 0;
 
@@ -19,14 +19,24 @@
 		@include break;
 		clear: both;
 		display: block;
-		width: 90%;
+		width: 80%;
 		margin: 0em auto 1em;
 		border-radius: 50%;
 		background-color: $green;
+		@include breakpoint($large) {
+			width: 90%;
+		}
 	}
 
+	.disconnected.replaced-svg {
+		background-color: $grey-light;
+	}
+
+	.off.replaced-svg {
+		background-color: $red;
+	}
 	@include breakpoint($medium) {
-		@include span(4);
+		@include span(3);
 	}
 	@include breakpoint($large) {
 		@include span(4);

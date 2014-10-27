@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,700);
-/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,42 +20,42 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 14, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -92,6 +92,22 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.43463em; }
 
+/* line 4, ../sass/components/partials/_buttons.scss */
+.btn {
+  clear: both;
+  color: #787878;
+  font-size: 1.12784em;
+  text-transform: lowercase;
+  text-decoration: none;
+  border: 1px solid #c7c7c7;
+  display: block;
+  padding: 0.75em 1em;
+  text-align: center; }
+  @media (min-width: 40em) {
+    /* line 4, ../sass/components/partials/_buttons.scss */
+    .btn {
+      display: none; } }
+
 /* line 6, ../sass/components/modules/_header.scss */
 header {
   width: 100%;
@@ -103,31 +119,35 @@ header {
   color: #fff;
   border-bottom: 1px solid #c7c7c7;
   z-index: 1; }
+  @media (min-width: 80em) {
+    /* line 6, ../sass/components/modules/_header.scss */
+    header {
+      padding-left: 0; } }
 
-/* line 18, ../sass/components/modules/_header.scss */
+/* line 21, ../sass/components/modules/_header.scss */
 .site-header {
   height: 0;
   max-width: 64em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   .site-header:after {
     content: " ";
     display: block;
     clear: both; }
   @media (min-width: 80em) {
-    /* line 18, ../sass/components/modules/_header.scss */
+    /* line 21, ../sass/components/modules/_header.scss */
     .site-header {
       max-width: 80em;
       margin-left: auto;
       margin-right: auto; }
-      /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+      /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
       .site-header:after {
         content: " ";
         display: block;
         clear: both; } }
 
-/* line 26, ../sass/components/modules/_header.scss */
+/* line 29, ../sass/components/modules/_header.scss */
 .logo {
   width: 25%;
   float: left;
@@ -135,8 +155,9 @@ header {
   padding-right: 0.83333%;
   display: block;
   margin: 1em auto;
-  margin-top: 1.75em; }
-  /* line 31, ../sass/components/modules/_header.scss */
+  margin-top: 1.75em;
+  padding-left: 1em; }
+  /* line 35, ../sass/components/modules/_header.scss */
   .logo a {
     font-weight: 700;
     text-decoration: none;
@@ -158,29 +179,57 @@ header {
   /* line 16, ../sass/components/modules/_navigation.scss */
   .menu-button .fa {
     color: #787878;
-    margin-left: 0.75em;
-    transition: all .25s ease; }
+    margin-left: 0.75em; }
 
-/* line 23, ../sass/components/modules/_navigation.scss */
+/* line 22, ../sass/components/modules/_navigation.scss */
 .dropdown {
-  clear: both;
-  text-align: center;
   padding: 0.5em 5em;
   background-color: #dadada;
   border-top: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7; }
-  /* line 30, ../sass/components/modules/_navigation.scss */
+  border-bottom: 10px solid #c7c7c7;
+  width: 100%;
+  top: 89px;
+  position: absolute;
+  height: 350px;
+  overflow-y: scroll; }
+  /* line 32, ../sass/components/modules/_navigation.scss */
   .dropdown li {
     list-style: none;
-    padding: 0.5em 2em;
-    text-align: right;
-    display: inline-block; }
-  /* line 36, ../sass/components/modules/_navigation.scss */
+    padding: 0.9em 1.5em;
+    text-align: center; }
+    @media (min-width: 40em) {
+      /* line 32, ../sass/components/modules/_navigation.scss */
+      .dropdown li {
+        text-align: right;
+        display: inline-block;
+        padding: 0.5em 1.5em; } }
+  /* line 42, ../sass/components/modules/_navigation.scss */
   .dropdown a {
     text-decoration: none;
     color: #3d3d3d; }
+  @media (min-width: 40em) {
+    /* line 22, ../sass/components/modules/_navigation.scss */
+    .dropdown {
+      display: block;
+      position: relative;
+      height: auto;
+      top: 0;
+      text-align: center;
+      overflow: auto;
+      border-bottom: 1px solid #c7c7c7; } }
 
-/* line 43, ../sass/components/modules/_navigation.scss */
+/* line 57, ../sass/components/modules/_navigation.scss */
+.back-to-top {
+  font-weight: 700; }
+  /* line 59, ../sass/components/modules/_navigation.scss */
+  .back-to-top a {
+    color: #787878; }
+  @media (min-width: 40em) {
+    /* line 63, ../sass/components/modules/_navigation.scss */
+    .back-to-top a {
+      display: none; } }
+
+/* line 70, ../sass/components/modules/_navigation.scss */
 .fadein, .fadeout {
   opacity: 0;
   visibility: hidden;
@@ -189,17 +238,47 @@ header {
   -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
   transition: visibility 0s linear 0.3s,opacity 0.3s linear; }
 
-/* line 52, ../sass/components/modules/_navigation.scss */
+/* line 79, ../sass/components/modules/_navigation.scss */
 .fadein {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s; }
 
 /* line 6, ../sass/components/modules/_floorplan.scss */
+.x-small {
+  display: block;
+  position: relative;
+  top: 120px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 3em; }
+  @media (min-width: 40em) {
+    /* line 6, ../sass/components/modules/_floorplan.scss */
+    .x-small {
+      display: none; } }
+
+/* line 17, ../sass/components/modules/_floorplan.scss */
+.small {
+  display: none; }
+  @media (min-width: 40em) {
+    /* line 17, ../sass/components/modules/_floorplan.scss */
+    .small {
+      display: block;
+      position: relative;
+      top: 120px;
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-bottom: 3em; } }
+  @media (min-width: 64em) {
+    /* line 17, ../sass/components/modules/_floorplan.scss */
+    .small {
+      display: none; } }
+
+/* line 32, ../sass/components/modules/_floorplan.scss */
 .large {
   display: none; }
   @media (min-width: 64em) {
-    /* line 6, ../sass/components/modules/_floorplan.scss */
+    /* line 32, ../sass/components/modules/_floorplan.scss */
     .large {
       display: block;
       position: relative;
@@ -208,40 +287,52 @@ header {
       top: 120px;
       margin-bottom: 2em; } }
   @media (min-width: 80em) {
-    /* line 6, ../sass/components/modules/_floorplan.scss */
+    /* line 32, ../sass/components/modules/_floorplan.scss */
     .large {
       padding-left: 6em;
       padding-right: 6em; } }
 
 /* line 5, ../sass/components/modules/_list_view.scss */
 .content {
-  width: 50%;
+  width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   padding-left: 2em;
   padding-right: 2em; }
+  @media (min-width: 64em) {
+    /* line 5, ../sass/components/modules/_list_view.scss */
+    .content {
+      width: 50%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      padding-left: 2em;
+      padding-right: 2em; } }
+  /* line 14, ../sass/components/modules/_list_view.scss */
+  .content:last-child {
+    margin-bottom: 3em; }
 
-/* line 11, ../sass/components/modules/_list_view.scss */
+/* line 19, ../sass/components/modules/_list_view.scss */
 .floorplan-list {
   max-width: 80em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   .floorplan-list:after {
     content: " ";
     display: block;
     clear: both; }
-  /* line 13, ../sass/components/modules/_list_view.scss */
+  /* line 21, ../sass/components/modules/_list_view.scss */
   .floorplan-list h4 {
     color: #4a5a62;
     margin-bottom: 1em; }
-  /* line 17, ../sass/components/modules/_list_view.scss */
+  /* line 25, ../sass/components/modules/_list_view.scss */
   .floorplan-list .content--sensor-list {
     clear: both;
     list-style-type: none; }
 
-/* line 24, ../sass/components/modules/_list_view.scss */
+/* line 32, ../sass/components/modules/_list_view.scss */
 .numbers {
   width: 100%;
   float: left;
@@ -253,17 +344,17 @@ header {
   padding-bottom: 0.75em;
   border-bottom: 1px solid #c7c7c7; }
 
-/* line 34, ../sass/components/modules/_list_view.scss */
+/* line 42, ../sass/components/modules/_list_view.scss */
 .labels, .status {
   display: block; }
 
-/* line 38, ../sass/components/modules/_list_view.scss */
+/* line 46, ../sass/components/modules/_list_view.scss */
 .label {
   text-transform: lowercase;
   color: #5b5b5b;
   font-weight: 400; }
 
-/* line 44, ../sass/components/modules/_list_view.scss */
+/* line 52, ../sass/components/modules/_list_view.scss */
 .status {
   text-transform: uppercase;
   font-size: 0.88665em;
@@ -271,7 +362,7 @@ header {
 
 /* line 4, ../sass/components/modules/_sensors.scss */
 .sensor {
-  width: 50%;
+  width: 33.33333%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -290,14 +381,24 @@ header {
     clear: both;
     clear: both;
     display: block;
-    width: 90%;
+    width: 80%;
     margin: 0em auto 1em;
     border-radius: 50%;
     background-color: #24a449; }
+    @media (min-width: 64em) {
+      /* line 18, ../sass/components/modules/_sensors.scss */
+      .sensor .replaced-svg {
+        width: 90%; } }
+  /* line 31, ../sass/components/modules/_sensors.scss */
+  .sensor .disconnected.replaced-svg {
+    background-color: #c7c7c7; }
+  /* line 35, ../sass/components/modules/_sensors.scss */
+  .sensor .off.replaced-svg {
+    background-color: #c3050e; }
   @media (min-width: 40em) {
     /* line 4, ../sass/components/modules/_sensors.scss */
     .sensor {
-      width: 33.33333%;
+      width: 25%;
       float: left;
       padding-left: 0.83333%;
       padding-right: 0.83333%; } }
@@ -308,3 +409,72 @@ header {
       float: left;
       padding-left: 0.83333%;
       padding-right: 0.83333%; } }
+
+/* line 5, ../sass/components/modules/_tooltips.scss */
+.lab-tooltip {
+  background-color: #eee;
+  border: 1px solid #CCC; }
+  /* line 9, ../sass/components/modules/_tooltips.scss */
+  .lab-tooltip ul {
+    list-style-type: none;
+    margin: 10px; }
+    /* line 13, ../sass/components/modules/_tooltips.scss */
+    .lab-tooltip ul li {
+      padding: 7px 5px; }
+      /* line 16, ../sass/components/modules/_tooltips.scss */
+      .lab-tooltip ul li span {
+        text-transform: lowercase;
+        font-size: 1.43463em;
+        line-height: 1.27202em; }
+      /* line 22, ../sass/components/modules/_tooltips.scss */
+      .lab-tooltip ul li .room-name-small {
+        text-transform: capitalize; }
+      /* line 26, ../sass/components/modules/_tooltips.scss */
+      .lab-tooltip ul li a {
+        color: #787878;
+        font-size: 1.27202em;
+        text-transform: lowercase;
+        text-decoration: none;
+        border: 1px solid #dadada;
+        display: block;
+        padding: 0.75em 1em;
+        text-align: center; }
+        @media (min-width: 40em) {
+          /* line 26, ../sass/components/modules/_tooltips.scss */
+          .lab-tooltip ul li a {
+            font-size: 1.43463em; } }
+      /* line 40, ../sass/components/modules/_tooltips.scss */
+      .lab-tooltip ul li.view-link {
+        margin-top: 10px; }
+
+/* line 47, ../sass/components/modules/_tooltips.scss */
+.qtip-content {
+  background-color: #f0f0f0; }
+
+/* line 4, ../sass/components/modules/_footer.scss */
+.signals {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: block;
+  position: fixed;
+  clear: both;
+  z-index: 1;
+  color: #787878;
+  bottom: 0;
+  text-align: center;
+  padding: 1em;
+  background-color: #eee;
+  border-top: 1px solid #c7c7c7; }
+  /* line 16, ../sass/components/modules/_footer.scss */
+  .signals li {
+    padding: 0 1em 0.5em; }
+    /* line 18, ../sass/components/modules/_footer.scss */
+    .signals li span {
+      font-weight: 700;
+      padding: 0 10px; }
+    @media (min-width: 40em) {
+      /* line 16, ../sass/components/modules/_footer.scss */
+      .signals li {
+        display: inline-block; } }

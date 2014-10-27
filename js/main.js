@@ -47,7 +47,24 @@ $(function() {
 // ----------------------------------------
 $('.menu-button , .dropdown li').click(function(){
 	$('.menu').find('.dropdown').toggleClass('fadeout fadein');
+	$('.menu').find('i').toggleClass('fa-bars fa-close');
 });
+
+
+// ----------------------------------------
+// Hide signal bar on scroll
+// ----------------------------------------
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()>100)
+     {
+        $('.signals').slideUp();
+     }
+    else
+     {
+      $('.signals').slideDown();
+     }
+ });
 
 
 // ----------------------------------------
@@ -59,7 +76,7 @@ function moveTo(id) {
 		parent = el.parent();
 
 	$('html, body').stop().animate({
-		'scrollTop': parent.offset().top - 70
+		'scrollTop': parent.offset().top - 60
 	}, 1200, 'swing');
 }
 

@@ -21,6 +21,7 @@
 // Partials
 @import "components/partials/colors";
 @import "components/partials/typography";
+@import "components/partials/buttons";
 
 // Modules
 @import "components/modules/header";
@@ -28,3 +29,5 @@
 @import "components/modules/floorplan";
 @import "components/modules/list_view";
 @import "components/modules/sensors";
+@import "components/modules/tooltips";
+@import "components/modules/footer";

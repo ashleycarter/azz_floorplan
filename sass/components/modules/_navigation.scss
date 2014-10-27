@@ -16,27 +16,54 @@
 	.fa {
 		color: $grey;
 		margin-left: 0.75em;
-		transition: all .25s ease;
 	}
 }
 
 .dropdown {
-	clear: both;
-	text-align: center;
 	padding: 0.5em 5em;
 	background-color: $grey-x-light;
 	border-top: 1px solid $grey-light;
-	border-bottom: 1px solid $grey-light;
+	border-bottom: 10px solid $grey-light;
+	width: 100%;
+	top: 89px;
+	position: absolute;
+	height: 350px;
+	overflow-y: scroll;
   li {
     list-style: none;
-	padding: 0.5em 2em;
-	text-align: right;
-	display: inline-block;
+	padding: 0.9em 1.5em;
+	text-align: center;
+	@include breakpoint($medium) {
+		text-align: right;
+		display: inline-block;
+		padding: 0.5em 1.5em;
+	}
   }
   a {
   	text-decoration: none;
   	color: $grey-dark;
   }
+  @include breakpoint($medium) {
+  	display: block;
+  	position: relative;
+  	height: auto;
+  	top: 0;
+  	text-align: center;
+  	overflow: auto;
+  	border-bottom: 1px solid $grey-light;
+  }
+}
+
+.back-to-top {
+	font-weight: $font-weight--bold;
+	a {
+		color: $grey;
+	}
+	@include breakpoint($medium) {
+		a {
+			display: none;
+		}
+	}
 }
 
 // Fade in / out effect for dropdown menu

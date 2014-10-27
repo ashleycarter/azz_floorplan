@@ -1,0 +1,49 @@
+// =========================================
+// Tooltips
+// =========================================
+
+.lab-tooltip {
+	background-color: $grey-xx-light;
+	border: 1px solid #CCC;
+
+	ul {
+		list-style-type: none;
+		margin: 10px;
+
+		li {
+			padding: 7px 5px;
+
+			span {
+				text-transform: lowercase;
+				font-size: ms(0.75);
+				line-height: ms(0.5);
+			}
+
+			.room-name-small {
+				text-transform: capitalize;
+			}
+
+			a {
+				color: $grey;
+				font-size: ms(0.5);
+				text-transform: lowercase;
+				text-decoration: none;
+				border: 1px solid $grey-x-light;
+				display: block;
+				padding: 0.75em 1em;
+				text-align: center;
+				@include breakpoint($medium) {
+					font-size: ms(0.75);
+				}
+			}
+
+			&.view-link {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.qtip-content {
+	background-color: #f0f0f0;
+}
