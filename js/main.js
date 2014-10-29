@@ -1,12 +1,4 @@
 // -----------------
-// Page Displays
-// -----------------
-// $('.floorplan, .locations').click(function(){
-// 	$('#page-one').toggleClass('fadeout fadein');
-// 	$('#page-two').toggleClass('fadein fadeout');
-// });
-
-// -----------------
 // SVG images
 // -----------------
 
@@ -138,54 +130,83 @@ function setUpTooltips() {
 // ----------------------------------------
 // Generating numbers on signal bar
 // ----------------------------------------
+function addCommas(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
 
-setInterval(function signalsPerSecond() { document.getElementById("signals-per-second").innerHTML = Math.floor(Math.random() * (2500 - 2200 + 1)) + 2200; }, 1000);
-setInterval(function totalSignals() { document.getElementById("total-signals").innerHTML = Math.floor(Math.random() * (55000000 - 50000000 + 1)) + 50000000; }, 2500);
-setInterval(function totalCpu() { document.getElementById("total-cpu").innerHTML = (Math.floor(Math.random() * (20 - 15 + 1)) + 15); }, 1500);
+setInterval(function signalsPerSecond() { 
+	document.getElementById('signals-per-second').innerHTML = addCommas(Math.floor(Math.random() * (2500 - 2200 + 1)) + 2200);
+}, 1000);
+
+setInterval(function totalSignals() { 
+	document.getElementById('total-signals').innerHTML = addCommas(Math.floor(Math.random() * (55000000 - 53000000 + 1)) + 53000000); 
+}, 2500);
+
+setInterval(function totalCpu() { 
+	document.getElementById('total-cpu').innerHTML = (Math.floor(Math.random() * (17 - 10 + 1)) + 10); 
+}, 1500);
 
 
 // ----------------------------------------
-// Toggle status connections
+// Toggle png animations
 // ----------------------------------------
-setInterval(function motionDetector() {
-	// $('.fire-lane-room').function() {
-	// 	$('.sensor').find('img').addClass('disconnected');
-	// }
-}, 1000);
+setInterval(function ampAnimation() {
+	$('.amp').find('.animated').fadeToggle('fast');
+}, 700);
 
-// setInterval(function signalsPerSecond() { 
-// 	document.getElementById("signals-per-second").innerHTML = Math.floor(Math.random() * (2500 - 2200 + 1)) + 2200; 
-// }, 1000);
-SVGElement.prototype.toggleClass = function (className) {
-  if (this.hasClass(className)) {
-    this.removeClass(className);
-  } else {
-    this.addClass(className);
-  }
-};
+setInterval(function cameraDetector() {
+	$('.camera').find('img').toggleClass('off on');
+	$('.camera').find('span').toggleClass('off on');
+}, 3000);
 
 setInterval(function motionDetector() {
-	$('.fire-lane-room').find('.motion svg').attr('class','on disconnected');
-	$('.fire-lane-room').find('.motion span').toggleClass('not-detected detected');
-}, 1000);
-
-// setInterval(function motionDetector() {
-// 	$('.fire-lane-room').find('.motion svg').attr('class','on');
-// }, 5000);
-
-// setInterval(function ampsAnimation() {
-// 	$('.amps').css("transform" , "scaleX(-1)");
-// }, 1000);
-
-setInterval(function ampsAnimation() {
-	$('.amps').toggleClass('amps-animate');
-}, 1000);
+	$('.motion').find('img').toggleClass('off on');
+	$('.motion').find('span').toggleClass('not-detected detected');
+}, 5000);
 
 setInterval(function pressureAnimation() {
-	$('.pressure').toggleClass('pressure-animate');
-}, 1000);
+	$('.pressure').find('.animated').fadeToggle('fast');
+}, 1500);
+
+setInterval(function windAnimation() {
+	$('.wind').find('.animated').fadeToggle('slow');
+}, 1500);
 
 
+// ----------------------------------------
+// Generating sensors numbers
+// ----------------------------------------
+
+var getPressureClass = document.getElementsByClassName("pressure-status");
+var getTemperatureClass = document.getElementsByClassName("temperature-status");
+var getProductTemperatureClass = document.getElementsByClassName("product-temperature-status");
+
+setInterval(function pressureSignals() { 
+	for(i=0;i<getPressureClass.length;i++) {
+    	getPressureClass[i].innerHTML = (Math.floor(Math.random() * (140 - 125 + 1)) + 125);
+    } 
+}, 3500);
+
+setInterval(function temperatureSignals() { 
+	for(i=0;i<getTemperatureClass.length;i++) {
+    	getTemperatureClass[i].innerHTML = (Math.floor(Math.random() * (860 - 820 + 1)) + 820);
+    } 
+}, 2000);
+
+setInterval(function productTemperatureSignals() { 
+	for(i=0;i<getProductTemperatureClass.length;i++) {
+    	getProductTemperatureClass[i].innerHTML = (Math.floor(Math.random()  * (680 - 630 + 1)) + 630);
+    }
+}, 1500);
 
 
 

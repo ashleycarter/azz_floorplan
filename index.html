@@ -20,26 +20,19 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body onload = "signalsPerSecond() , totalSignals() , totalCpu() , motionDetector() , ampsAnimation() , pressureAnimation()">
+    <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <!-- Begin main site content -->
-<!--     <div>
-        <div data-role="header" class="header">
-            <div class="site-header"> -->
-               <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
-<!--             </div>
-        </div>
-    </div> -->
+   <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
+
     <!-- page one -->
     <section data-role="page" id="page-one">
         <div>
             <div data-role="header" class="header">
                 <div class="site-header">
-<!--                    <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
- -->                </div>
+                </div>
                 <nav>
                     <ul>
                         <li class="floorplan"><a class="menu-button" href="#page-two" data-transition="slide">View Floorplan<i class="fa fa-th-large"></i></a></li>
@@ -47,7 +40,191 @@
                 </nav>
             </div>
         </div>
+        <section id="map">
+            <span class="large"><img class="svg" src="img/map_large.svg"/></span>
+        </section>
+        <section id="lab-locations">
+            <ul class="lab-locations-list">
+                <li class="h4">AZZ Galvanizing</li>
+                    <ul class="address">
+                        <li>AZZ Galv.- Arizona</li>
+                        <li>15775 W. Elwood St.</li>
+                        <li>Goodyear, AZ 85338</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Arkansas</li>
+                        <li>998 Escue Dr.</li>
+                        <li>Prairie Grove, AR 72753</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Baton Rouge</li>
+                        <li>3520 S Riverview</li>
+                        <li>Port Allen, LA 70767</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Beaumont</li>
+                        <li>5898 Industrial Rd.</li>
+                        <li>Beaumont, TX 77705</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Bristol</li>
+                        <li>14781 Industrial Park Rd</li>
+                        <li>Bristol, VA 24202</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Canton</li>
+                        <li>1723 Cleveland Ave. S.W.</li>
+                        <li>Canton, OH 44707</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Catoosa</li>
+                        <li>5101 Bird Creek Ave</li>
+                        <li>Catoosa, OK 74015</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Chelsea</li>
+                        <li>6022 South Industrial Rd</li>
+                        <li>Chelsea, OK 74016</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Cincinnati</li>
+                        <li>4454 Steel Pl</li>
+                        <li>Cincinnati, OH 45209</li>
+                    </ul>
+                    <ul class="address">
+                        <li class="active"><a href="#page-two" data-transition="slide">AZZ Galv.- Crowley</a></li>
+                        <li>200 North Beverly</li>
+                        <li>Crowley, TX 76036</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Denver</li>
+                        <li>4400 E. 61st Ave</li>
+                        <li>Commerce City, CO 80022</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Dixon</li>
+                        <li>310 E Progress Dr</li>
+                        <li>Dixon, IL 61021</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Hamilton</li>
+                        <li>7825 South Homestead Dr</li>
+                        <li>Hamilton, IN 46742</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Houston</li>
+                        <li>7407 C.E. King Pkwy</li>
+                        <li>Houston, TX 77044</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Houston-West</li>
+                        <li>9103 Fairbanks N. Houston Rd</li>
+                        <li>Houston, TX 77064</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Hurst</li>
+                        <li>625 W Hurst Blvd</li>
+                        <li>Hurst, TX 76053</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Jackson</li>
+                        <li>125 Aztec Dr</li>
+                        <li>Richland, MS 39218</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Joliet</li>
+                        <li>625 Mills Rd</li>
+                        <li>Joliet, IL 60433</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Kansas City</li>
+                        <li>7700 E 12th St</li>
+                        <li>Kansas City, MO 64126</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Louisville</li>
+                        <li>6310 Kenjoy Dr</li>
+                        <li>Louisville, KY 40214</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galvanizing – Minneapolis</li>
+                        <li>446 St. Anthony Pkwy</li>
+                        <li>Minneapolis, MN 55418</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Mobile</li>
+                        <li>17640 Industrial Park Dr. E.</li>
+                        <li>Citronelle, AL 36522</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Moss Point</li>
+                        <li>4212 Dutch Bayou Rd</li>
+                        <li>Moss Point, MS 39563</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Muncie</li>
+                        <li>2415 S Walnut St</li>
+                        <li>Muncie, IN 47302</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Nashville</li>
+                        <li>3201 Elkins Ave</li>
+                        <li>Nashville, TN 37209</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- New Orleans</li>
+                        <li>2402 Engineers Rd</li>
+                        <li>Belle Chasse, LA 70037</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Peoria</li>
+                        <li>6718 W Plank Rd</li>
+                        <li>Peoria, IL 61604</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Pilot</li>
+                        <li>1626 Manilla Creek Road</li>
+                        <li>Poca, WV 25159</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Plymouth</li>
+                        <li>2631 Jim Neu Dr</li>
+                        <li>Plymouth, IN 46563</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- St Louis</li>
+                        <li>1461 Kin Ark Ct</li>
+                        <li>St. Louis, MO 63132</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Tulsa</li>
+                        <li>1800 W 21st St</li>
+                        <li>Tulsa, OK 74107-2712</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Waskom</li>
+                        <li>990 E. Texas Ave</li>
+                        <li>Waskom, TX 75692</li>
+                    </ul>
+                    <ul class="address">
+                        <li>AZZ Galv.- Winsted</li>
+                        <li>800 6th St S</li>
+                        <li>Winsted, MN 55395</li>
+                    </ul>
+            </ul>
+        </section>
     </section>
+
+        <!-- map tooltip section -->
+        <div id="tooltip-html" style="display:none">
+            <div id="crowley-tx-tt">
+                <ul class="tt-sensors">
+                    <li><span class="room-name-small">Crowley, TX</span></li>
+                    <li class="view-link"><a href="#page-two" data-transition="slide">View Floorplan</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end map tooltips -->
     <!-- end page one -->
     
     <!-- page two -->
@@ -55,8 +232,7 @@
         <section id="top">
         <div class="header">
             <div class="site-header">
-<!--                <div class="logo"><h1 class="h2"><a labtarget="top" href="#">AZZ</a></h1></div>
- -->            </div>
+            </div>
             <nav>
               <ul>
                 <li class="menu contains-dropdown"><a class="menu-button">Menu <i class="fa fa-bars"></i></a>
@@ -93,19 +269,19 @@
                         <ul class="content--sensor-list">
                             <li><h4>Beta<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
+                                <span class="status-icon camera"><img class="png off" src="img/png/camera-off.png"/><img class="png off on" src="img/png/camera-on.png"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">Off</span>
+                                <span class="status camera"><span class="off"></span></span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
+                                <span class="status-icon pressure"><img class="png on" src="img/png/pressure.png"/><img class="png on animated" src="img/png/pressure-animated.png"/></span>
                                 <span class="label">Pressure</span>
-                                <span class="status">On</span>
+                                <span class="status pressure-status"><span></span></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">68°</span>
+                                <span class="status temperature-status"></span>
                             </li>
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
@@ -115,19 +291,19 @@
                         <ul class="content--sensor-list">
                             <li><h4>Boiler<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon amp"><img class="png on" src="img/png/amp.png"/><img class="png on animated" src="img/png/amp-animated.png"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
+                                <span class="status-icon pressure"><img class="png on" src="img/png/pressure.png"/><img class="png on animated" src="img/png/pressure-animated.png"/></span>
                                 <span class="label">Pressure</span>
-                                <span class="status">On</span>
+                                <span class="status pressure-status"></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">71°</span>
+                                <span class="status temperature-status"></span>
                             </li>
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
@@ -137,12 +313,12 @@
                         <ul class="content--sensor-list">
                             <li><h4>Fire Lane<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon motion"><img class="svg on" src="img/svg/motion.svg"/></span>
+                                <span class="status-icon motion"><img class="png off" src="img/png/motion.png"/></span>
                                 <span class="label">Motion</span>
-                                <span class="status motion"><span class="detected"></span></span>
+                                <span class="status motion"><span class="not-detected"></span></span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
+                                <span class="status-icon wind"><img class="png on" src="img/png/wind.png"/><img class="png on animated" src="img/png/wind-animated.png"/></span>
                                 <span class="label">Wind</span>
                                 <span class="status">3 MPH</span>
                             </li>
@@ -154,19 +330,19 @@
                         <ul class="content--sensor-list">
                             <li><h4>Kettle<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/levels.svg"/></span>
+                                <span class="status-icon"><img class="svg off" src="img/svg/levels.svg"/></span>
                                 <span class="label">Levels</span>
-                                <span class="status">57%</span>
+                                <span class="status"><span class="off"></span></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">52°</span>
+                                <span class="status temperature-status"></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/product-temp.svg"/></span>
                                 <span class="label">Product Temperature</span>
-                                <span class="status">43°</span>
+                                <span class="status product-temperature-status"></span>
                             </li>
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
@@ -188,7 +364,7 @@
                         <ul class="content--sensor-list">
                             <li><h4>Material Staging<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon amp"><img class="png on" src="img/png/amp.png"/><img class="png on animated" src="img/png/amp-animated.png"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
@@ -200,12 +376,12 @@
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">70°</span>
+                                <span class="status">70° F</span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/product-temp.svg"/></span>
                                 <span class="label">Product Temperature</span>
-                                <span class="status">43°</span>
+                                <span class="status product-temperature-status"></span>
                             </li>
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
@@ -220,7 +396,7 @@
                                 <span class="status">7.4</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
+                                <span class="status-icon wind"><img class="png on" src="img/png/wind.png"/><img class="png on animated" src="img/png/wind-animated.png"/></span>
                                 <span class="label">Wind</span>
                                 <span class="status">3 MPH</span>
                             </li>
@@ -247,14 +423,14 @@
                                 <span class="status">None Detected</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
+                                <span class="status-icon wind"><img class="png on" src="img/png/wind.png"/><img class="png on animated" src="img/png/wind-animated.png"/></span>
                                 <span class="label">Wind</span>
                                 <span class="status">2 MPH</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
+                                <span class="status-icon"><img class="png on" src="img/png/camera-on.png"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">Off</span>
+                                <span class="status">On</span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/pH.svg"/></span>
@@ -274,7 +450,7 @@
                         <ul class="content--sensor-list">
                             <li><h4>Scale<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
+                                <span class="status-icon wind"><img class="png on" src="img/png/wind.png"/><img class="png on animated" src="img/png/wind-animated.png"/></span>
                                 <span class="label">Wind</span>
                                 <span class="status">2 MPH</span>
                             </li>
@@ -291,7 +467,7 @@
                         <ul class="content--sensor-list">
                             <li><h4>Tanks<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon amp"><img class="png on" src="img/png/amp.png"/><img class="png on animated" src="img/png/amp-animated.png"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
@@ -301,14 +477,14 @@
                                 <span class="status">42%</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/pressure.svg"/></span>
+                                <span class="status-icon pressure"><img class="png on" src="img/png/pressure.png"/><img class="png on animated" src="img/png/pressure-animated.png"/></span>
                                 <span class="label">Pressure</span>
-                                <span class="status">On</span>
+                                <span class="status"><span class="on"></span></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/temp.svg"/></span>
                                 <span class="label">Temperature</span>
-                                <span class="status">42°</span>
+                                <span class="status product-temperature-status"></span>
                             </li>
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
@@ -323,9 +499,9 @@
                                 <span class="status">None Detected</span>
                             </li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg off" src="img/svg/camera-off.svg"/></span>
+                                <span class="status-icon camera"><img class="png off" src="img/png/camera-off.png"/><img class="png off on" src="img/png/camera-on.png"/></span>
                                 <span class="label">Cameras</span>
-                                <span class="status">Off</span>
+                                <span class="status camera"><span class="off"></span></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/moisture.svg"/></span>

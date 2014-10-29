@@ -15,7 +15,7 @@
 		text-align: center;
 	}
 
-	.svg, .on, .disconnected {
+	.png, .svg, .on, .disconnected {
 		@include break;
 		clear: both;
 		display: block;
@@ -64,6 +64,21 @@
 	transition: all .25s ease;
 }
 
+.status span.on:after {
+	background-color: $white;
+	content: "On";
+	display: block;
+	clear: both;
+	transition: all .25s ease;
+}
+
+.status span.off:after {
+	background-color: $white;
+	content: "Off";
+	display: block;
+	clear: both;
+	transition: all .25s ease;
+}
 
 
 

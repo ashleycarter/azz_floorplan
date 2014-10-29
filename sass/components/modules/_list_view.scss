@@ -54,3 +54,28 @@
 	font-size: ms(-0.25);
 	margin-bottom: 2em;
 }
+
+// Specific Label Content
+span.pressure-status:after {
+	content: " PSI";
+}
+
+span.temperature-status:after,
+span.product-temperature-status:after {
+	content: "° F";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
