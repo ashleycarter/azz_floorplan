@@ -15,7 +15,7 @@
 		text-align: center;
 	}
 
-	.replaced-svg {
+	.svg, .on, .disconnected {
 		@include break;
 		clear: both;
 		display: block;
@@ -28,12 +28,19 @@
 		}
 	}
 
-	.disconnected.replaced-svg {
-		background-color: $grey-light;
+	.on {
+		background-color: $green;
+		transition: all .25s ease;
 	}
 
-	.off.replaced-svg {
+	.disconnected {
+		background-color: $grey-light;
+		transition: all .25s ease;
+	}
+
+	.off {
 		background-color: $red;
+		transition: all .25s ease;
 	}
 	@include breakpoint($medium) {
 		@include span(3);
@@ -42,3 +49,33 @@
 		@include span(4);
 	}
 }
+
+.not-detected:after {
+	content: "Not Detected";
+	display: block;
+	clear: both;
+	transition: all .25s ease;
+}
+
+.detected:after {
+	content:"Detected";
+	display: block;
+	clear: both;
+	transition: all .25s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

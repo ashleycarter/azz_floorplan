@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300,700);
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,42 +20,42 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-/* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+/* line 14, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -130,7 +130,7 @@ header {
   max-width: 64em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   .site-header:after {
     content: " ";
     display: block;
@@ -141,7 +141,7 @@ header {
       max-width: 80em;
       margin-left: auto;
       margin-right: auto; }
-      /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+      /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
       .site-header:after {
         content: " ";
         display: block;
@@ -318,7 +318,7 @@ header {
   max-width: 80em;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
   .floorplan-list:after {
     content: " ";
     display: block;
@@ -377,7 +377,7 @@ header {
     margin-bottom: 0.5em;
     text-align: center; }
   /* line 18, ../sass/components/modules/_sensors.scss */
-  .sensor .replaced-svg {
+  .sensor .svg, .sensor .on, .sensor .disconnected {
     clear: both;
     clear: both;
     display: block;
@@ -387,14 +387,20 @@ header {
     background-color: #24a449; }
     @media (min-width: 64em) {
       /* line 18, ../sass/components/modules/_sensors.scss */
-      .sensor .replaced-svg {
+      .sensor .svg, .sensor .on, .sensor .disconnected {
         width: 90%; } }
   /* line 31, ../sass/components/modules/_sensors.scss */
-  .sensor .disconnected.replaced-svg {
-    background-color: #c7c7c7; }
-  /* line 35, ../sass/components/modules/_sensors.scss */
-  .sensor .off.replaced-svg {
-    background-color: #c3050e; }
+  .sensor .on {
+    background-color: #24a449;
+    transition: all .25s ease; }
+  /* line 36, ../sass/components/modules/_sensors.scss */
+  .sensor .disconnected {
+    background-color: #c7c7c7;
+    transition: all .25s ease; }
+  /* line 41, ../sass/components/modules/_sensors.scss */
+  .sensor .off {
+    background-color: #c3050e;
+    transition: all .25s ease; }
   @media (min-width: 40em) {
     /* line 4, ../sass/components/modules/_sensors.scss */
     .sensor {
@@ -409,6 +415,29 @@ header {
       float: left;
       padding-left: 0.83333%;
       padding-right: 0.83333%; } }
+
+/* line 53, ../sass/components/modules/_sensors.scss */
+.not-detected:after {
+  content: "Not Detected";
+  display: block;
+  clear: both;
+  transition: all .25s ease; }
+
+/* line 60, ../sass/components/modules/_sensors.scss */
+.detected:after {
+  content: "Detected";
+  display: block;
+  clear: both;
+  transition: all .25s ease; }
+
+/* line 6, ../sass/components/modules/_svg_animations.scss */
+.amps-animate {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV"; }
 
 /* line 5, ../sass/components/modules/_tooltips.scss */
 .lab-tooltip {
@@ -473,7 +502,8 @@ header {
     /* line 18, ../sass/components/modules/_footer.scss */
     .signals li span {
       font-weight: 700;
-      padding: 0 10px; }
+      padding-left: 10px;
+      padding-right: 2px; }
     @media (min-width: 40em) {
       /* line 16, ../sass/components/modules/_footer.scss */
       .signals li {

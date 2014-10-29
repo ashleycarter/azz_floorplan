@@ -1,0 +1,32 @@
+// =========================================
+// SVG Animations
+// =========================================
+
+// Amps
+.amps-animate {
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    // transition: all .25s ease;
+}
+
+// Pressure
+// .pressure {
+// 	background: url('img/svg/pressure.svg');
+// 	background-size: contain;
+// 	background-color: $green;
+// 	display: block;
+// 	height: 5.5em;
+// 	transition: all .25s ease;
+// 	@include breakpoint($large) {
+// 		height: 10em;
+// 	}
+// }
+
+// .pressure-animated {
+// 	background-image: url('img/svg/pressure-animated.svg'); 
+// 	transition: all .25s ease;
+// }

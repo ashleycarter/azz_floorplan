@@ -127,3 +127,90 @@ function setUpTooltips() {
 		});
 	});
 }
+
+
+// ----------------------------------------
+// Generating numbers on signal bar
+// ----------------------------------------
+
+setInterval(function signalsPerSecond() { document.getElementById("signals-per-second").innerHTML = Math.floor(Math.random() * (2500 - 2200 + 1)) + 2200; }, 1000);
+setInterval(function totalSignals() { document.getElementById("total-signals").innerHTML = Math.floor(Math.random() * (55000000 - 50000000 + 1)) + 50000000; }, 2500);
+setInterval(function totalCpu() { document.getElementById("total-cpu").innerHTML = (Math.floor(Math.random() * (20 - 15 + 1)) + 15); }, 1500);
+
+
+// ----------------------------------------
+// Toggle status connections
+// ----------------------------------------
+setInterval(function motionDetector() {
+	// $('.fire-lane-room').function() {
+	// 	$('.sensor').find('img').addClass('disconnected');
+	// }
+}, 1000);
+
+// setInterval(function signalsPerSecond() { 
+// 	document.getElementById("signals-per-second").innerHTML = Math.floor(Math.random() * (2500 - 2200 + 1)) + 2200; 
+// }, 1000);
+SVGElement.prototype.toggleClass = function (className) {
+  if (this.hasClass(className)) {
+    this.removeClass(className);
+  } else {
+    this.addClass(className);
+  }
+};
+
+setInterval(function motionDetector() {
+	$('.fire-lane-room').find('.motion svg').lunar.toggleClass('on, disconnected');
+	$('.fire-lane-room').find('.motion span').toggleClass('not-detected detected');
+}, 1000);
+
+// setInterval(function motionDetector() {
+// 	$('.fire-lane-room').find('.motion svg').attr('class','on');
+// }, 5000);
+
+// setInterval(function ampsAnimation() {
+// 	$('.amps').css("transform" , "scaleX(-1)");
+// }, 1000);
+
+setInterval(function ampsAnimation() {
+	$('.amps').toggleClass('amps-animate');
+}, 1000);
+
+setInterval(function pressureAnimation() {
+	$('.pressure').toggleClass('pressure-animate');
+}, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

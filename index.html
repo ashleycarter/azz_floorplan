@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link href="js/vendor/jquery.qtip.custom/jquery.qtip.min.css" rel="stylesheet">
+        <link href="js/vendor/lunar.min.js" rel="stylesheet">
         
         <link href="css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -20,7 +21,7 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body onload = "signalsPerSecond() , totalSignals() , totalCpu() , motionDetector() , ampsAnimation() , pressureAnimation()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -61,7 +62,7 @@
 
         <section class="floorplan-list">
             <div>
-                <ul class="content">
+                <ul class="content beta-room">
                     <li><span id="beta-content" class="h2 numbers">01</span></li>
                         <ul class="content--sensor-list">
                             <li><h4>Beta<span></span></h4></li>
@@ -83,12 +84,12 @@
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
-                <ul class="content">
+                <ul class="content boiler-room">
                     <li><span id="boiler-content" class="h2 numbers">02</span></li>
                         <ul class="content--sensor-list">
                             <li><h4>Boiler<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
@@ -105,14 +106,14 @@
                             <li class="view-link"><a class="btn" labtarget="top" href="#">Back to Top</a></li>
                         </ul>
                 </ul>
-                <ul class="content">
+                <ul class="content fire-lane-room">
                     <li><span id="fire-lane-content" class="h2 numbers">03</span></li>
                         <ul class="content--sensor-list">
                             <li><h4>Fire Lane<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg disconnected" src="img/svg/motion.svg"/></span>
+                                <span class="status-icon motion"><img class="svg on" src="img/svg/motion.svg"/></span>
                                 <span class="label">Motion</span>
-                                <span class="status">Not Detected</span>
+                                <span class="status motion"><span class="detected"></span></span>
                             </li>
                             <li class="sensor">
                                 <span class="status-icon"><img class="svg" src="img/svg/wind.svg"/></span>
@@ -161,7 +162,7 @@
                         <ul class="content--sensor-list">
                             <li><h4>Material Staging<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
@@ -264,7 +265,7 @@
                         <ul class="content--sensor-list">
                             <li><h4>Tanks<span></span></h4></li>
                             <li class="sensor">
-                                <span class="status-icon"><img class="svg" src="img/svg/amps.svg"/></span>
+                                <span class="status-icon"><img class="svg amps" src="img/svg/amps.svg"/></span>
                                 <span class="label">Amp</span>
                                 <span class="status">50 amps</span>
                             </li>
@@ -313,9 +314,9 @@
 
         <footer>
           <ul class="signals">
-            <li>Signals Per Second:<span class="signals-per-second">2,175</span></li>
-            <li>Total Signals Today:<span class="total-signals">50,195,654</span></li>
-            <li>CPU Percent:<span class="total-cpu">17.3%</span></li>
+            <li>Signals Per Second:<span id="signals-per-second"></span></li>
+            <li>Total Signals Today:<span id="total-signals"></span></li>
+            <li>CPU Percent:<span id="total-cpu"></span>%</li>
            </ul>
         </footer>
 

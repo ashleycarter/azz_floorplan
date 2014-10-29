@@ -17,7 +17,8 @@
 		padding: 0 1em 0.5em;
 		span {
 			font-weight: $font-weight--bold;;
-			padding: 0 10px;
+			padding-left: 10px;
+			padding-right: 2px;
 		}
 		@include breakpoint($medium) {
 			display: inline-block;
