@@ -159,7 +159,7 @@ SVGElement.prototype.toggleClass = function (className) {
 };
 
 setInterval(function motionDetector() {
-	$('.fire-lane-room').find('.motion svg').lunar.toggleClass('on, disconnected');
+	$('.fire-lane-room').find('.motion svg').attr('class','on disconnected');
 	$('.fire-lane-room').find('.motion span').toggleClass('not-detected detected');
 }, 1000);
 
