@@ -1,4 +1,12 @@
 // -----------------
+// Page Displays
+// -----------------
+// $('.floorplan, .locations').click(function(){
+// 	$('#page-one').toggleClass('fadeout fadein');
+// 	$('#page-two').toggleClass('fadein fadeout');
+// });
+
+// -----------------
 // SVG images
 // -----------------
 
@@ -45,9 +53,10 @@ $(function() {
 // ----------------------------------------
 // Dropdown Menu
 // ----------------------------------------
-$('.menu-button , .dropdown li').click(function(){
+
+$('#page-two .contains-dropdown .menu-button , .contains-dropdown .dropdown li').click(function(){
 	$('.menu').find('.dropdown').toggleClass('fadeout fadein');
-	$('.menu').find('i').toggleClass('fa-bars fa-close');
+	$('.contains-dropdown').find('i').toggleClass('fa-bars fa-close');
 });
 
 
@@ -56,12 +65,9 @@ $('.menu-button , .dropdown li').click(function(){
 // ----------------------------------------
 
 $(window).scroll(function() {
-    if ($(this).scrollTop()>100)
-     {
+    if ($(this).scrollTop()>100) {
         $('.signals').slideUp();
-     }
-    else
-     {
+     } else {
       $('.signals').slideDown();
      }
  });

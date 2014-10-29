@@ -3,7 +3,7 @@
 // =========================================
 
 // Header
-header {
+.header {
 	width: 100%;
 	margin: 0 auto;
 	display: block;
@@ -29,10 +29,15 @@ header {
 .logo {
 	@include span(3);
 	display: block;
+	position: fixed;
+	background-color: $grey-xx-light;
+	z-index: 1000;
 	margin: 1em auto;
-	margin-top: 1.75em;
+	margin-top: 1.5em;
 	padding-left: 1em;
 	a {
+		display: block;
+		padding-top: 5px;
 		font-weight: $font-weight--bold;
 		text-decoration: none;
 		color: $blue-x-dark;
